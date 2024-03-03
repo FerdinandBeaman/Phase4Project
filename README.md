@@ -20,14 +20,25 @@ The organizers of South by Southwest contacted me to collect public opinion abou
 
 About ten thousand curated tweets. Thankfully, they have already been labeled by the helpful people here: https://data.world/crowdflower/brands-and-product-emotions
 
+The classes were imbalanced to varying degrees. I ended up dropping the smallest class and merging neutral into negative to form a more general "not positive"
+![img](./Images/Bar.png)
+
 ## Methods
 
 This project utilized Count Vectorization and TF-TDF Vectorization. The data was not large enough for me to resort to using a hashing vectorizer.
 For the modeling, a simple Naive Bayes was used. Despite the model's shortcomings on paper, it (allegedly) performs just as well as more complex modeling systems but at reduced cost to your machine.
 
+I also made heavy use of the Fuzz library to find ambiguous tweets. You can see how while even when tweets are exactly identical, they are not rated identically:
+
+![img](./Images/Ambiguous.png)
+
 ## Evaluation of Results
 
+![img](./Images/FinalCM.png)
+
 None of my models reached even 75% accuracy, despite the baseline set by the majority class being about 2/3s. A disappointing result to be sure, but I think that the data is at least partly to blame.
+
+On the bright side, my precision and recall are not wildly imbalanced.
 
 ## Conclusions
 
