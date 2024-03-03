@@ -1,2 +1,44 @@
 # Phase4Project
 Identifying Brand/Product Emotions
+# Phase 4 Project: Text Classification
+**Author**: [Ferdinand Beaman](mailto:ferdinand.beaman@gmail.com)
+
+## Overview
+
+This was a text classification task, to see if I could train models to identify the emotional qualities of text.
+
+I considered building a ternary instead of binary classifier (positive, neutral, and then also negative), but considering both the small size of the third class and my own time remaining in the program, I decided against it.
+
+There was a class imbalance (2:1), but my research suggests that it's only moderate and not strong enough for me to intervene. With that in mind and seeing no other reasons to have special sensitivity for false negatives/positives, I predominately used accuracy scores to rank models' performances. However, if there did happen to be some major issue with either recall/precision regarding the minority class, I would take that into account.
+
+I went with a Naive Bayes classifier because it appears to be approximately as accurate as the more complex classifier while being significantly easier on both my computer and my mind.
+
+## Business problem: 
+The organizers of South by Southwest contacted me to collect public opinion about what they did right at a given year's festival in order for them to know what to emphasize next time.
+
+## Data
+
+About ten thousand curated tweets. Thankfully, they have already been labeled by the helpful people here: https://data.world/crowdflower/brands-and-product-emotions
+
+## Methods
+
+This project utilized Count Vectorization and TF-TDF Vectorization. The data was not large enough for me to resort to using a hashing vectorizer.
+For the modeling, a simple Naive Bayes was used. Despite the model's shortcomings on paper, it (allegedly) performs just as well as more complex modeling systems but at reduced cost to your machine.
+
+## Evaluation of Results
+
+None of my models reached even 75% accuracy, despite the baseline set by the majority class being about 2/3s. A disappointing result to be sure, but I think that the data is at least partly to blame.
+
+## Conclusions
+
+The short nature of tweets may just not contain enough information for a computer to tell what is and what isn't meaningful. This was exacerbated by the presence of ambiguous messages that even the human raters disagreed about the categorization of. Hopefully if those issues can be addressed, the project can be improved upon.
+
+### Recommendations
+From our end, though, it's possible that a different NLP modeler could have more luck. Bigrams may not really be of value here, but may as well be explored as well.
+Lastly, iterating through the boundary to optimize the distinction between an ambiguous tweet and an actually different one may be of value.
+
+### Next Steps
+
+Get a bigger corpus with hopefully longer messages. Twitter has since upgraded its maximum character limit, so they may have already done that for you.
+
+If possible, take care to increase inter-rater reliability during the labeling process. That's almost certainly key to a lot of this.
