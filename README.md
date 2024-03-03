@@ -30,7 +30,7 @@ For the modeling, a simple Naive Bayes was used. Despite the model's shortcoming
 
 I also made heavy use of the Fuzz library to find ambiguous tweets. You can see how while even when tweets are exactly identical, they are not rated identically:
 
-![img](./Images/Ambiguous.png)
+![img](./Images/Ambiguity.png)
 
 ## Evaluation of Results
 
