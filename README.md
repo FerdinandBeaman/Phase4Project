@@ -45,7 +45,7 @@ On the bright side, my precision and recall are not wildly imbalanced.
 The short nature of tweets may just not contain enough information for a computer to tell what is and what isn't meaningful. This was exacerbated by the presence of ambiguous messages that even the human raters disagreed about the categorization of. Hopefully if those issues can be addressed, the project can be improved upon.
 
 ### Recommendations
-From our end, though, it's possible that a different NLP modeler could have more luck. Bigrams may not really be of value here, but may as well be explored as well.
+From our end, though, it's possible that a different NLP modeler could have more luck. Bigrams may not really be of value here, but they may as well be explored.
 Lastly, iterating through the boundary to optimize the distinction between an ambiguous tweet and an actually different one may be of value.
 
 ### Next Steps
