@@ -45,11 +45,10 @@ On the bright side, my precision and recall are not wildly imbalanced.
 The short nature of tweets may just not contain enough information for a computer to tell what is and what isn't meaningful. This was exacerbated by the presence of ambiguous messages that even the human raters disagreed about the categorization of. Hopefully if those issues can be addressed, the project can be improved upon.
 
 ### Recommendations
-From our end, though, it's possible that a different NLP modeler could have more luck. Bigrams may not really be of value here, but they may as well be explored.
-Lastly, iterating through the boundary to optimize the distinction between an ambiguous tweet and an actually different one may be of value.
+Find out how people felt negatively about the event. People enjoyed coming, so improvements probably are on the other end of things.
 
 ### Next Steps
 
 Get a bigger corpus with hopefully longer messages. Twitter has since upgraded its maximum character limit, so they may have already done that for you.
-
+Iterate through the boundary to optimize the distinction between an ambiguous tweet and an actually different one may be of value.
 If possible, take care to increase inter-rater reliability during the labeling process. That's almost certainly key to a lot of this.
