@@ -45,7 +45,8 @@ On the bright side, my precision and recall are not wildly imbalanced.
 The short nature of tweets may just not contain enough information for a computer to tell what is and what isn't meaningful. This was exacerbated by the presence of ambiguous messages that even the human raters disagreed about the categorization of. Hopefully if those issues can be addressed, the project can be improved upon.
 
 ### Recommendations
-Find out how people felt negatively about the event. People enjoyed coming, so improvements probably are on the other end of things.
+Melissa Mayer was mentioned in a lot of positive tweets and not in a lot of negative tweets. Use her for your marketing coming up.
+"Google Circle" was mentioned in a lot of negative tweets and not in a lot of positive ones. Try to distance yourself from new social media ventures.
 
 ### Next Steps
 
