@@ -4,7 +4,7 @@ Identifying Brand/Product Emotions
 
 ## Overview
 
-This was a text classification task, to see if I could train models to identify the emotional qualities of text.
+This was a text classification task which sought to train models in order to identify the emotional qualities of text. Specifically, of tweets.
 
 I considered building a ternary instead of binary classifier (positive, neutral, and then also negative), but considering both the small size of the third class and my own time remaining in the program, I decided against it.
 
