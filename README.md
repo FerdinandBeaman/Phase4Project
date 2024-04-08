@@ -1,4 +1,3 @@
-# Phase4Project
 Identifying Brand/Product Emotions
 # Phase 4 Project: Text Classification
 **Author**: [Ferdinand Beaman](mailto:ferdinand.beaman@gmail.com)
