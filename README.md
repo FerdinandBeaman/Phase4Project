@@ -24,7 +24,7 @@ The classes were imbalanced to varying degrees. I ended up dropping the smallest
 
 ## Methods
 
-This project utilized Count Vectorization and TF-TDF Vectorization. The data was not large enough for me to resort to using a hashing vectorizer.
+This project utilized Count Vectorization and TF-IDF Vectorization. The data was not large enough for me to resort to using a hashing vectorizer.
 For the modeling, a simple Naive Bayes was used. Despite the model's shortcomings on paper, it (allegedly) performs just as well as more complex modeling systems but at reduced cost to your machine.
 
 I also made heavy use of the Fuzz library to find ambiguous tweets. You can see how while even when tweets are exactly identical, they are not rated identically:
